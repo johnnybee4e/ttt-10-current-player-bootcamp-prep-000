@@ -3,4 +3,5 @@ def turn_count(board)
   if board.each do |turn|
     puts "#{turn}"
     counter += 1
+  end
 end
