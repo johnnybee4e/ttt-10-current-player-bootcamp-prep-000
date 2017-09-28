@@ -9,11 +9,9 @@ def turn_count(board)
 end
 
 def current_player(board)
-  board.each do |token|
-    if turn_count(board) % 2
-      puts "X"
-    else
-      puts"O"
-    end
+  if turn_count(board) % 2
+    return "X"
+  else
+    return "O"
   end
 end
